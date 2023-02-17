@@ -1,0 +1,51 @@
+{
+  "name": "abner-vinaja-portfolio-website",
+  "version": "1.0.0",
+  "description": "This is a portfolio website that showcases my software development skills and experience.",
+  "main": "src/client/index.js",
+  "scripts": {
+    "build-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build-prod": "webpack --config webpack.prod.js", 
+    "test": "jest",
+    "start": "node src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssy089/Abner-Vinaja-Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Abner Vinaja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssy089/Abner-Vinaja-Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/ssy089/Abner-Vinaja-Portfolio-Website#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.58.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
