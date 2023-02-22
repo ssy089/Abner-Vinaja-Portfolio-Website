@@ -5,9 +5,26 @@ import AboutMe from './pages/about.js';
 import Skills from './pages/skills.js';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
-import './styles/main.scss';
-
 import './media/Abner_Vinaja_Profile_Picture_2022_Small.jpg';
+import './media/Java.jpg';
+import './media/C.png';
+import './media/Common_Lisp.png';
+import './media/MySQL.png';
+import './media/Python.png';
+import './media/CSS.png';
+import './media/HTML.png';
+import './media/PHP.png';
+import './media/JavaScript.png';
+import './media/JUnit.png';
+import './media/MochaJS.png';
+import './media/ExpressJS.png';
+import './media/React.svg';
+import './media/Ubuntu.png';
+import './media/Bash.png';
+import './media/NodeJS.png';
+import './media/Docker.png';
+import './media/Webpack.png';
+import './media/MongoDB.png';
 
 const router = createBrowserRouter([
   {
@@ -15,11 +32,11 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "about",
+    path: "/about",
     element: <AboutMe />
   },
   {
-    path: "skills",
+    path: "/skills",
     element: <Skills />
   }
 ]);

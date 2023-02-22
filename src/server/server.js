@@ -4,7 +4,7 @@ dotenv.config();
 const bodyParser = require('body-parser'); //Used for parsing request bodies
 const cors = require('cors');              //Used for enabling CORS requests
 const express = require('express');        //Used for creating the server
-const port = 8080;
+const port = 8082;
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
@@ -44,7 +44,7 @@ const progLang = [
   },
   {
     name: 'CSS',
-    image: 'CSS.jpg',
+    image: 'CSS.png',
     description: 'I have used CSS (and Sass, a CSS extension language) to create custom styles for my web pages. As I have taken online courses, I have had a little bit of practice with CSS frameworks like Tailwind CSS and Pico.'
   },
   {
@@ -55,7 +55,7 @@ const progLang = [
   {
     name: 'JavaScript',
     image: 'JavaScript.png',
-    description: 'In my last year at UTSA, I first learned JavaScript in order to write RESTful APIs, and to build the back-end for web applications. Since then, through online course and my personal projects, I have learned how to build functional front-end components for web applications.'
+    description: 'In my last semester at UTSA, I first learned JavaScript in order to write RESTful APIs, and to build the back-end for web applications. Later, through online courses, I learned how to use JavaScript to add functionality to front-end components.'
   }
 ];
 
@@ -67,7 +67,7 @@ const frameworks = [
   },
   {
     name: 'Mocha',
-    image: 'MochaJS',
+    image: 'MochaJS.png',
     description: 'In order to execute unit tests on my JavaScript code when I was building a RESTful API web application, I learned how to use Mocha with Chai. Then, I learned how to execute my unit tests whenever I deployed my web application.'
   },
   {
@@ -77,7 +77,7 @@ const frameworks = [
   },
   {
     name: 'React',
-    image: 'React.png',
+    image: 'React.svg',
     description: 'After extensive practice with building functional front-end components using HTML and JavaScript, I decided to learn React in order to understand the benefits of front-end libraries and frameworks. Now, I use React to build functional web pages on the front-end.'
   }
 ];
@@ -125,5 +125,5 @@ app.use(express.static('./dist'));
 
 /* Start the local server. */
 const server = app.listen(port, function() {
-  console.log('Abner Vinaja Portfolio Website is running on http://localhost:8080');
+  console.log('Abner Vinaja Portfolio Website is running on http://localhost:8082');
 });

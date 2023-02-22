@@ -3,15 +3,15 @@ import { useState, useEffect } from 'react';
 import { Footer, NavBar } from '../components.js';
 import SkillSection from './skillSection.js';
 
-
+import '../styles/skills.scss';
 
 const Skills = () => {
   const [allSkillsList, setAllSkillsList] = useState([]);
   useEffect(() => {
     async function fetchSkillsList() {
       try {
-        const responseList = await fetch('/listOfSkills');
-        const fullSkillList = await response.json();
+        const responseList = await fetch('http://localhost:8082/listOfSkills');
+        const fullSkillList = await responseList.json();
         setAllSkillsList(fullSkillList);
         console.log(fullSkillList);
       }
@@ -25,11 +25,16 @@ const Skills = () => {
   
 
   return (
-    <div classsName="App">
+    <div className="App">
       <NavBar />
-      {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[0]} /> : <span></span>}
-      {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[1]} /> : <span></span>}
-      {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[2]} /> : <span></span>}
+      <main>
+        <h2>Programming Languages</h2>
+        {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[0]} /> : <p className="error-message">Sorry, an error occurred while the data was being retrieved</p>}
+        <h2>Frameworks and Libraries</h2>
+        {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[1]} /> : <p className="error-message">Sorry, an error occurred while the data was being retrieved</p>}
+        <h2>Other Tools (Runtime Environments, Build Tools, Platforms, etc.)</h2>
+        {allSkillsList.length !== 0 ? <SkillSection skillList={allSkillsList[2]} /> : <p className="error-message">Sorry, an error occurred while the data was being retrieved</p>}
+      </main>
       <Footer />
     </div>
   );

@@ -4,12 +4,13 @@ a {
 }
 
 body { 
-  height: 100vh;
+  margin: 0;
+  min-height: 100vh;
 }
 
 #root {
   background-image: linear-gradient(to bottom right, #00CED1, #fff); 
-  height: 100%
+  min-height: 100vh;
 }
 
 footer { 
@@ -49,7 +50,7 @@ nav {
   display: flex;
   flex-direction: column;
   font-family: Rockwell, serif;
-  height: 100%;
+  min-height: 100vh;
   justify-content: space-between;
 }
 
