@@ -1,0 +1,73 @@
+.tooltip-image {
+  position: relative;
+
+  img {
+    border-radius: 0%;
+    height: 50px;
+    margin: 10px;
+    width: 50px;
+  }
+
+  &:hover {
+    .tooltip-text {
+      visibility: visible;
+    }
+  }
+}
+
+.tooltip-text {
+  background-color: #000;
+  bottom: 100%;
+  color: #7fffd4;
+  left: 50%;
+  position: absolute;
+  margin-left: -60px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+h3 {
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.project-card {
+  align-items: center;
+  background-color: #20b2aa;
+  border-radius: 25%;
+  box-shadow: 10px 10px #778899;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin: 100px auto;
+  overflow: auto;
+  scrollbar-color: #7fffd4;
+  width: 700px;
+}
+
+.project-description {
+  width: 500px;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  
+  a {
+    text-align: center;
+  }
+}
+
+.project-skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+}

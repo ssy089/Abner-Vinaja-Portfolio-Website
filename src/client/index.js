@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './app.js';
 import AboutMe from './pages/about.js';
 import Skills from './pages/skills.js';
+import Projects from './pages/projects.js';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 import './media/Abner_Vinaja_Profile_Picture_2022_Small.jpg';
@@ -18,6 +19,7 @@ import './media/JavaScript.png';
 import './media/JUnit.png';
 import './media/MochaJS.png';
 import './media/ExpressJS.png';
+import './media/Jest.png';
 import './media/React.svg';
 import './media/Ubuntu.png';
 import './media/Bash.png';
@@ -38,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/skills",
     element: <Skills />
+  },
+  {
+    path: "/projects",
+    element: <Projects />
   }
 ]);
 

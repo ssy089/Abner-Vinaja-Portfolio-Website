@@ -76,6 +76,11 @@ const frameworks = [
     description: 'I have used Express to build RESTful APIs for both my academic projects and personal projects.'
   },
   {
+    name: 'Jest',
+    image: 'Jest.png',
+    description: 'Jest is the second JavaScript testing framework that I have used to perform unit testing on my web applications. While using Jest, I have experimented with various packages like Jest Fetch Mock in order to test asynchronous functions.'
+  },
+  {
     name: 'React',
     image: 'React.svg',
     description: 'After extensive practice with building functional front-end components using HTML and JavaScript, I decided to learn React in order to understand the benefits of front-end libraries and frameworks. Now, I use React to build functional web pages on the front-end.'
@@ -118,6 +123,103 @@ const otherTools = [
 app.get('/listOfSkills', (req, res) => {
   res.status = 200;
   res.json([progLang, frameworks, otherTools]);
+});
+
+const listOfProjects = [
+  {
+    name: "Abner Vinaja Portfolio Website",
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}, {name: 'MongoDB', image: 'MongoDB.png'}],
+    description: {
+      generalDescription: "This project creates my portfolio website, which showcases my software development knowledge and projects. This project's objectives include:",
+      bulletPoints: [
+        "Build the webpage's structure using HTML, and style the page using Sass.",
+        "Use React to build the web pages and to add functionality to the website",
+        "Use Node.js to create a local server, and use Express.js to handle middleware and routing functions.",
+        "Configure Webpack to manage the project's source files and assets, and to set up development and production environment configurations for the project.",
+        "Store the website's data on a MongoDB database, and then retrieve that data when web pages are rendered."
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Vinaja-Portfolio-Website',
+    webURL: 'http://localhost:8080'
+  },
+  {
+    name: 'Trip Planner App',
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
+    description: {
+      generalDescription: "This project creates a single-page travel application that allows the user to store information about their travel plans, and to see relevant weather information about their destination. This project incorporates the various skills and tools that were taught in Udacity's Front End Web Developer Nanodegree Program:",
+      bulletPoints: [
+        "Build the webpage's structure using HTML, and style the page using Sass.",
+        "Use JavaScript methods to manipulate the Document Object Model (DOM), and to provide functionality for the webpage.",
+        "Incorporate several Application Programming Interfaces (APIs) in order to implement various types of data in the application.",
+        "Use Node.js to create a local server, and use Express.js to handle middleware and routing functions.",
+        "Configure Webpack to manage the project's source files and assets, and to set up development and production environment configurations for the project.",
+        "Implement Jest to execute unit tests for the project."
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Trip-Planner-App',
+    webURL: 'https://abner-vinaja-trip-planner-app.azurewebsites.net/'
+  },
+  {
+    name: 'MeaningCloud NLP App',
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
+    description: {
+      generalDescription: "This project creates a Natural Language Processing (NLP) application that uses the MeaningCloud Sentiment Analysis API to generate a sentiment analysis of news articles and/or blog posts. In addition, this project uses Webpack to manage the project's source files and assets. The other main objectives of this project are:",
+      bulletPoints: [
+        'Set up development and production environment configurations for the project.',
+        "Write the project's styles using Sass.",
+        'Implement Jest to execute unit tests for the project.'
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Evaluate-Articles-NLP-App',
+    webURL: 'https://abner-vinaja-evaluate-articles-nlp-app.azurewebsites.net/'
+  },
+  {
+    name: 'Weather Journal App',
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}],
+    description: {
+      generalDescription: "This project creates a weather journal application. It is my third project for Udacity's Front End Web Developer Nanodegree Program. This project uses server-side and client-side code to collect, store, and retrieve weather data and user input. Also, this project uses Promises in JavaScript to perform the following actions:",
+      bulletPoints: [
+        'Get weather data about specific ZIP codes using the OpenWeatherMap API.',
+        'Store weather data with user input on the server endpoint.',
+        'Get all data from the server endpoint, and then dynamically update the User Interface (UI) to display the data.'
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Weather-Journal-App',
+    webURL: 'https://abner-vinaja-weather-journal-app.azurewebsites.net/'
+  },
+  {
+    name: 'Landing Page Template',
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}],
+    description: {
+      generalDescription: "This project creates a basic multi-section landing page. It is my second project for Udacity's Front End Web Developer Nanodegree Program. The project uses basic Document Object Model (DOM) methods to add the following functionalities to the page:",
+      bulletPoints: [
+        'Dynamically build the navigation menu based on the amount of content (sections) on the page.',
+        'Set a section as an active section whenever it is the section currently being viewed.',
+        'Whenever a navigation menu item is clicked, the page should scroll to the appropriate section.'
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Landing-Page-Project',
+    webURL: 'https://delightful-bush-006287010.2.azurestaticapps.net/'
+  },
+  {
+    name: 'Personal Blog',
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}],
+    description: {
+      generalDescription: "This project creates a personal blog as a static website. It is my first project in Udacity's Front End Web Developer Nanodegree Program. This project fulfills the following objectives:",
+      bulletPoints: [
+        'Build the web pages using HTML, and add styling using CSS.', 
+        'Use CSS Flexbox and CSS Grid to set the layouts for web page components.', 
+        'Implement responsive web design by including media queries. These adjust the web page layouts in response to different screen, window, and viewport sizes.'
+      ]
+    },
+    githubURL: 'https://github.com/ssy089/Abner-Personal-Blog-Project',
+    webURL: 'https://happy-field-0940da810.2.azurestaticapps.net/'
+  }
+];
+
+app.get('/listOfProjects', (req, res) => {
+  res.status = 200;
+  res.json(listOfProjects);
 });
 
 /* Point the application instance to the folder containing the webpage files. */

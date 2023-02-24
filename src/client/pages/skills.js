@@ -13,7 +13,6 @@ const Skills = () => {
         const responseList = await fetch('http://localhost:8082/listOfSkills');
         const fullSkillList = await responseList.json();
         setAllSkillsList(fullSkillList);
-        console.log(fullSkillList);
       }
       catch (err) {
         console.log(err);
