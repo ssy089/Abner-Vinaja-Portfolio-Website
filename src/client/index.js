@@ -7,6 +7,7 @@ import Projects from './pages/projects.js';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 import './media/Abner_Vinaja_Profile_Picture_2022_Small.jpg';
+import './media/My_Desk.jpg';
 import './media/Java.jpg';
 import './media/C.png';
 import './media/Common_Lisp.png';

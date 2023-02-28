@@ -1,3 +1,8 @@
+.project-skills-header {
+  margin: 10px;
+  padding-top: 0;
+}
+
 .tooltip-image {
   position: relative;
 
@@ -17,11 +22,14 @@
 
 .tooltip-text {
   background-color: #000;
+  border-radius: 5%;
   bottom: 100%;
   color: #7fffd4;
   left: 50%;
+  padding: 10px 20px;
   position: absolute;
-  margin-left: -60px;
+  margin-left: -35px;
+  text-align: center;
   visibility: hidden;
   z-index: 1;
 }

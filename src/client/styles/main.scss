@@ -1,6 +1,10 @@
 a {
   color: #000;
   font-weight: bold;
+
+  &:hover {
+    color: #7fffd4;
+  }
 }
 
 body { 
@@ -29,9 +33,9 @@ h1 {
 }
 
 img {
-  height: 300px;
-  border-radius: 50%;
-  width: 300px;
+  height: 400px;
+  
+  width: 400px;
 }
 
 nav {
@@ -55,21 +59,28 @@ nav {
 }
 
 .intro-card {
-  align-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  height: 600px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 1200px;
+
+  img {
+    border-radius: 15%;
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.paragraphs {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: start;
 
-  div {
-    display: flex;
-    flex-direction: row;
-    font-size: 2em;
-    justify-content: space-evenly;
-    width: 1000px;
-  
-    p {
-      width: 500px
-    }
+  p {
+    width: 500px;
   }
 }

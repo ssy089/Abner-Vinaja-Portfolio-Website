@@ -1,11 +1,28 @@
+h3 {
+  a {
+    &:hover {
+      color: #008b8b;
+    }
+}
+}
+
 .about-page {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+
+  img {
+    border-radius: 25%;
+    height: 600px;
+    width: 600px;
+  }
 
   p {
-    width: 500px;
+    font-size: 1.25em;
+    width: 700px;
   }
 }

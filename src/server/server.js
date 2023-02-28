@@ -25,12 +25,12 @@ const progLang = [
   {
     name: 'Python',
     image: 'Python.png',
-    description: 'As the third programming language that I learned as a college student, I used Python in various application programming projects. For instance, in my cloud computing course, I used to Python with Apache Hadoop and Apache Spark to process data sets.'
+    description: 'As the third programming language that I learned as a college student, I used Python in various application programming projects. For instance, in my cloud computing course, I used Python with Apache Hadoop and Apache Spark to process data sets.'
   },
   {
     name: 'Common Lisp',
     image: 'Common_Lisp.png',
-    description: 'In my Programming Languages course, I briefly learned the syntax for this language as I learned about differences among programming language syntaxes, and then I used this language for a few academic assignments'
+    description: 'In my Programming Languages course, as I learned about differences among programming language syntaxes, I briefly learned the syntax for this language. Then, I used this language for a few academic assignments'
   },
   {
     name: 'SQL',
@@ -63,12 +63,12 @@ const frameworks = [
   {
     name: 'JUnit',
     image: 'JUnit.png',
-    description: 'As I learned how to build applications using Java, I learned about unit testing, how to use JUnit to execute units tests for Java code.'
+    description: 'As I practiced building applications using Java, I learned about unit testing. So, I learned how to use JUnit to write and execute units tests for Java code.'
   },
   {
     name: 'Mocha',
     image: 'MochaJS.png',
-    description: 'In order to execute unit tests on my JavaScript code when I was building a RESTful API web application, I learned how to use Mocha with Chai. Then, I learned how to execute my unit tests whenever I deployed my web application.'
+    description: 'When I was building a RESTful API web application, in order to execute unit tests on my JavaScript code, I learned how to use Mocha with Chai. Then, I learned how to execute my unit tests within a CI/CD pipeline.'
   },
   {
     name: 'Express',
@@ -91,12 +91,12 @@ const otherTools = [
   {
     name: 'Ubuntu',
     image: 'Ubuntu.png',
-    description: 'Throughout my time at UTSA, I used the Ubuntu environment to execute various types of applications and scripts. These ranged from system programs to data-processing applications.'
+    description: 'Throughout my time at UTSA, I often used an Ubuntu environment when executing various types of applications and scripts. These ranged from system programs to data-processing applications.'
   },
   {
     name: 'Bash',
     image: 'Bash.png',
-    description: 'When I first learned about systems programming, I learned about the Bourne Again SHell (Bash). I then practiced systems programming by writing Bash scripts'
+    description: 'When I first learned about systems programming, I learned about the Bourne Again SHell (Bash). I then practiced systems programming by writing Bash scripts.'
   },
   {
     name: 'Node.js',
@@ -128,7 +128,7 @@ app.get('/listOfSkills', (req, res) => {
 const listOfProjects = [
   {
     name: "Abner Vinaja Portfolio Website",
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}, {name: 'MongoDB', image: 'MongoDB.png'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}, {name: 'MongoDB', image: 'MongoDB.png'}],
     description: {
       generalDescription: "This project creates my portfolio website, which showcases my software development knowledge and projects. This project's objectives include:",
       bulletPoints: [
@@ -144,7 +144,7 @@ const listOfProjects = [
   },
   {
     name: 'Trip Planner App',
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
     description: {
       generalDescription: "This project creates a single-page travel application that allows the user to store information about their travel plans, and to see relevant weather information about their destination. This project incorporates the various skills and tools that were taught in Udacity's Front End Web Developer Nanodegree Program:",
       bulletPoints: [
@@ -161,7 +161,7 @@ const listOfProjects = [
   },
   {
     name: 'MeaningCloud NLP App',
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}],
     description: {
       generalDescription: "This project creates a Natural Language Processing (NLP) application that uses the MeaningCloud Sentiment Analysis API to generate a sentiment analysis of news articles and/or blog posts. In addition, this project uses Webpack to manage the project's source files and assets. The other main objectives of this project are:",
       bulletPoints: [
@@ -175,7 +175,7 @@ const listOfProjects = [
   },
   {
     name: 'Weather Journal App',
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express.js', image: 'ExpressJS.png'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}],
     description: {
       generalDescription: "This project creates a weather journal application. It is my third project for Udacity's Front End Web Developer Nanodegree Program. This project uses server-side and client-side code to collect, store, and retrieve weather data and user input. Also, this project uses Promises in JavaScript to perform the following actions:",
       bulletPoints: [
