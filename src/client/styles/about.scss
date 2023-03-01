@@ -13,16 +13,58 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  width: 75%;
+  width: 1400px;
 
   img {
     border-radius: 25%;
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 500px;
   }
 
   p {
     font-size: 1.25em;
     width: 700px;
+  }
+}
+
+@media(max-width: 600px) {
+  .about-page {
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 0.75em;
+    width: 100%;
+
+    img {
+      height: 250px;
+      margin: 30px auto;
+      width: 250px;
+    }
+
+    p {
+      padding: 0 10%;
+      text-align: center;
+      width: 80%;
+    }
+  }
+}
+
+@media(min-width: 601px) and (max-width: 1450px) {
+  .about-page {
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    width: 100%;
+
+    img {
+      height: 400px;
+      margin: 30px auto;
+      width: 400px;
+    }
+
+    p {
+      padding: 0 10%;
+      text-align: center;
+      width: 80%;
+    }
   }
 }

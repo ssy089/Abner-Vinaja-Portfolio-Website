@@ -47,6 +47,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
+    padding-inline-start: 0;
   }
 }
 
@@ -82,5 +83,61 @@ nav {
 
   p {
     width: 500px;
+  }
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .intro-card {
+    flex-direction: column;
+    font-size: 1em;
+    padding-top: 15px;
+    width: 100%;
+  
+    img {
+      border-radius: 15%;
+      height: 250px;
+      margin: 10px auto;
+      width: 250px;
+    }
+  }
+  
+  .paragraphs {
+    justify-content: center;
+  
+    p {
+      padding: 0 5%;
+      text-align: center;
+      width: 90%;
+    }
+  }
+}
+
+@media(min-width: 601px) and (max-width: 1200px) {
+  .intro-card {
+    flex-direction: column;
+    font-size: 1.25em;
+    padding-top: 20px;
+    width: 100%;
+  
+    img {
+      border-radius: 15%;
+      height: 400px;
+      margin: 10px auto;
+      width: 400px;
+    }
+  }
+  
+  .paragraphs {
+    justify-content: center;
+  
+    p {
+      padding: 0 5%;
+      text-align: center;
+      width: 90%;
+    }
   }
 }
