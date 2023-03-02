@@ -21,7 +21,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 .skill-item {
@@ -53,5 +53,32 @@ h4 {
     margin: 0 auto;
     padding-bottom: 10px;
     width: 250px;
+  }
+}
+
+@media(max-width: 400px) {
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .skill-item {
+    margin: 20px 5px;
+    width: 280px;
+
+    img {
+      margin: 75px 65px;
+    }
+  }
+
+  .skill-section {
+    width: 100%;
+  }
+
+  .skill-info {
+    width: 100%;
+
+    p {
+      width: 80%;;
+    }
   }
 }
