@@ -10,7 +10,7 @@ const Skills = () => {
   useEffect(() => {
     async function fetchSkillsList() {
       try {
-        const responseList = await fetch('http://localhost:8082/listOfSkills');
+        const responseList = await fetch('http://localhost:8081/listOfSkills');
         const fullSkillList = await responseList.json();
         setAllSkillsList(fullSkillList);
       }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './app.js';
+import App from './App.js';
 import AboutMe from './pages/about.js';
 import Skills from './pages/skills.js';
 import Projects from './pages/projects.js';
