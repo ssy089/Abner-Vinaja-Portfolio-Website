@@ -9,7 +9,7 @@ const Projects = () => {
   useEffect(() => {
     async function fetchProjectList() {
       try {
-        const responseList = await fetch('http://localhost:8081/listOfProjects');
+        const responseList = await fetch('https://abner-vinaja-portfolio-website.azurewebsites.net/listOfProjects');
         const fullProjectList = await responseList.json();
         setProjectList(fullProjectList);
       }

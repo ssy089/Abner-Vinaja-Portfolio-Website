@@ -10,7 +10,7 @@ const Skills = () => {
   useEffect(() => {
     async function fetchSkillsList() {
       try {
-        const responseList = await fetch('http://localhost:8081/listOfSkills');
+        const responseList = await fetch('https://abner-vinaja-portfolio-website.azurewebsites.net/listOfSkills');
         const fullSkillList = await responseList.json();
         setAllSkillsList(fullSkillList);
       }

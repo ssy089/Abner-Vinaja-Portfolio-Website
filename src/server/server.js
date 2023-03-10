@@ -4,7 +4,7 @@ dotenv.config();
 const bodyParser = require('body-parser'); //Used for parsing request bodies
 const cors = require('cors');              //Used for enabling CORS requests
 const express = require('express');        //Used for creating the server
-const port = 8081;
+const port = 80;
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
@@ -145,7 +145,7 @@ const listOfProjects = [
       ]
     },
     githubURL: 'https://github.com/ssy089/Abner-Vinaja-Portfolio-Website',
-    webURL: 'http://localhost:8081'
+    webURL: 'https://abner-vinaja-portfolio-website.azurewebsites.net'
   },
   {
     name: 'Trip Planner App',
@@ -244,5 +244,5 @@ app.use(express.static('./dist'));
 
 /* Start the local server. */
 const server = app.listen(port, function() {
-  console.log('Abner Vinaja Portfolio Website is running on http://localhost:8081');
+  console.log('Abner Vinaja Portfolio Website is running on http://localhost');
 });
