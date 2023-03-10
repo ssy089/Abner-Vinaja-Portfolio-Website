@@ -28,6 +28,7 @@ import './media/NodeJS.png';
 import './media/Docker.png';
 import './media/Webpack.png';
 import './media/MongoDB.png';
+import './media/Redux.png';
 
 const router = createBrowserRouter([
   {

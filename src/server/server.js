@@ -133,15 +133,15 @@ app.get('/listOfSkills', (req, res) => {
 const listOfProjects = [
   {
     name: "Abner Vinaja Portfolio Website",
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}, {name: 'Docker', image: 'Docker.png'}],
     description: {
       generalDescription: "This project creates my portfolio website, which showcases my software development knowledge and projects. This project's objectives include:",
       bulletPoints: [
         "Build the webpage's structure using HTML, and style the page using Sass.",
-        "Use React to build the web pages and to add functionality to the website",
+        "Use React to build the web pages and to add functionality to the website.",
         "Use Node.js to create a local server, and use Express.js to handle middleware and routing functions.",
         "Configure Webpack to manage the project's source files and assets, and to set up development and production environment configurations for the project.",
-        "Store the website's data on a MongoDB database, and then retrieve that data when web pages are rendered."
+        "Deploy the website application within a Docker container."
       ]
     },
     githubURL: 'https://github.com/ssy089/Abner-Vinaja-Portfolio-Website',
