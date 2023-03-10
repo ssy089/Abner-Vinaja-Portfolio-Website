@@ -84,6 +84,11 @@ const frameworks = [
     name: 'React',
     image: 'React.svg',
     description: 'After extensive practice with building functional front-end components using HTML and JavaScript, I decided to learn React in order to understand the benefits of front-end libraries and frameworks. Now, I use React to build functional web pages on the front-end.'
+  },
+  {
+    name: 'Redux',
+    image: 'Redux.png',
+    description: 'While I was learning React, I learned how Redux is used to maintain a centralized store for application state data. Then, I practiced the use of Redux for applications that require frequent updates to global data.'
   }
 ];
 
@@ -128,7 +133,7 @@ app.get('/listOfSkills', (req, res) => {
 const listOfProjects = [
   {
     name: "Abner Vinaja Portfolio Website",
-    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Jest', image: 'Jest.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}, {name: 'MongoDB', image: 'MongoDB.png'}],
+    skills: [{name: 'HTML', image: 'HTML.png'}, {name: 'CSS', image: 'CSS.png'}, {name: 'JavaScript', image: 'JavaScript.png'}, {name: 'Node.js', image: 'NodeJS.png'}, {name: 'Express', image: 'ExpressJS.png'}, {name: 'Webpack', image: 'Webpack.png'}, {name: 'React', image: 'React.svg'}],
     description: {
       generalDescription: "This project creates my portfolio website, which showcases my software development knowledge and projects. This project's objectives include:",
       bulletPoints: [
@@ -220,6 +225,18 @@ const listOfProjects = [
 app.get('/listOfProjects', (req, res) => {
   res.status = 200;
   res.json(listOfProjects);
+});
+
+app.get('/about', (req, res) => {
+  res.redirect('/');
+});
+
+app.get('/skills', (req, res) => {
+  res.redirect('/');
+});
+
+app.get('/projects', (req, res) => {
+  res.redirect('/');
 });
 
 /* Point the application instance to the folder containing the webpage files. */

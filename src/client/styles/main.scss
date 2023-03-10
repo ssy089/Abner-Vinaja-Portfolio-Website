@@ -58,6 +58,13 @@ nav {
   justify-content: space-between;
 }
 
+.error-message {
+  color: #f00;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+
 .intro-card {
   display: flex;
   flex-direction: row;
